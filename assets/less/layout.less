@@ -1,0 +1,121 @@
+/*------------------------------------*\
+    $l-header
+\*------------------------------------*/
+.l-header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+}
+    .logo{
+        margin-top: 50px;
+        display: block;
+        color: #000000;
+        font-size: 70px;
+        font-weight: bold;
+        >a{
+            color: inherit;
+            &:hover,&:active,&:focus{
+                text-decoration: none;
+            }
+        }
+    }
+    .nav{
+        margin-top: 60px;
+    }
+        .menu{
+            display: inline-block;
+            text-align: left;
+        }
+            .menu-item{
+                +.menu-item{
+                    margin-top: 20px;
+                }
+                >a{
+                    display: block;
+                    color: #000000;
+                    &:hover,&:active,&:focus{
+                        font-weight: bold;
+                    }
+                }
+            }
+    .community{
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        font-size: 0;
+        li{
+            display: inline-block;
+            +li{
+                margin-left: 10px;
+            }
+            >a{
+                display: block;
+                font-size: 25px;
+                color: #000000;
+            }
+        }
+    }
+
+
+/*------------------------------------*\
+    $l-main
+\*------------------------------------*/
+.l-main{
+    margin-left: 200px;
+}
+.section-block{
+    padding: 100px 0;
+}
+@media screen and(min-width: 1500px){
+    .container{
+        max-width: 1400px;
+    }
+}
+/*------------------------------------*\
+    $l-footer
+\*------------------------------------*/
+.l-footer{
+    margin-left: 200px;
+}
+    .footer-content{
+        .l-flex;
+
+        .logo{
+            margin-top: 0;
+        }
+        .community{
+            position: relative;
+            bottom: 0;
+            li{
+                display: block;
+                +li{
+                    margin-top: 20px;
+                    margin-left: 0;
+                }
+                >a{
+                    display: block;                    
+                    font-size: 1rem;
+                }
+            }
+            .fa{
+                margin-right: 5px;
+            }
+        }
+    }
+    .footer-link{
+        .l-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+        .copyright{
+            margin-top: auto;
+            margin-bottom: 0;
+        }

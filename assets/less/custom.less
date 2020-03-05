@@ -1,0 +1,96 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+@import "variables.less";
+@import "mixin.less";
+@import "base.less";
+@import "layout.less";
+
+
+
+/*------------------------------------*\
+    $l-banner
+\*------------------------------------*/
+.l-banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("@{imgUrl}banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+    .banner-text{
+        position: absolute;
+        top: 25%;
+        right: 100px;
+        text-align: right;
+        color: #ffffff;
+    }
+        .banner-title{
+            margin-right: 15px;
+            text-align: left;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .banner-title-line{
+            display: inline-block;
+            width: 24em;
+            height: 5px;
+            margin: 15px 0 25px 0;
+            background-color: #ffffff;
+        }
+        .banner-desc{
+            font-size: 25px;
+        }
+/*------------------------------------*\
+    $l-about
+\*------------------------------------*/
+.about{
+    .l-flex;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------------------------*\
+    $l-experience
+\*------------------------------------*/
+.l-experience{
+    background-color: #f6f6f6;
+}
+/*------------------------------------*\
+    $l-collection
+\*------------------------------------*/
+/*------------------------------------*\
+    $l-contact
+\*------------------------------------*/
+.l-contact{
+    background-color: #1a1a1a;
+    color: #b2b2b2;
+}
+    .contact-title{
+        color: #ffffff;
+    }
+    .form-group{
+        margin-bottom: 20px;
+    }
+    .form-control{
+        height: 40px;
+        border: 1px solid #b2b2b2;
+        border-radius: 0;
+        background-color: transparent;
+    }
+    textarea.form-control{
+        height: 100px;
+    }
+    .btn-submit{
+        height: 40px;
+        padding: 6px 5em;
+        border: 1px solid #b2b2b2;
+        border-radius: 0;
+        background-color: transparent;
+        transition: all 0.3s;
+        &:hover,&:active,&:focus{
+            background-color: #ffffff;
+            color: @brand;
+        }
+    }
