@@ -43,6 +43,33 @@
         .banner-desc{
             font-size: 25px;
         }
+@media screen and(max-width: 991px){
+    .banner-text{
+        top: 15%;
+        right: 50px;
+    }
+}
+@media screen and(max-width: 767px){
+    .banner-text{
+        position: relative;
+        top: 100px;
+        right: 0;
+    }
+        .banner-title{
+            text-align: right;
+            font-size: 1.5em;
+        }
+        .banner-title-line{
+            width: 10em;
+            height: 3px;
+            margin: 5px 0 15px 0;
+            margin-right: 15px;
+        }
+        .banner-desc{
+            margin-right: 15px;
+            font-size: 1rem;
+        }
+}
 /*------------------------------------*\
     $l-about
 \*------------------------------------*/
@@ -50,6 +77,11 @@
     .l-flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and(max-width: 767px){
+    .about{
+        display: block;
+    }
 }
 /*------------------------------------*\
     $l-experience
@@ -78,6 +110,7 @@
         border: 1px solid #b2b2b2;
         border-radius: 0;
         background-color: transparent;
+        color: #ffffff;
     }
     textarea.form-control{
         height: 100px;

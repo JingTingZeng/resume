@@ -23,8 +23,12 @@
 </head>
 <body>
 	<header class="l-header">
+		<div id="toogleNav" class="hamburger visible-sm-block visible-xs-block">
+			<span></span>
+			<span></span>
+		</div>
 		<div class="logo"><a id="top" href="#">JT.</a></div>
-		<nav class="nav">
+		<nav id="sidebar" class="nav">
 			<ul class="list-unstyled menu">
 				<li class="menu-item"><a href="#about">ABOUT ME</a></li>
 				<li class="menu-item"><a href="#experience">EXPERIENCE</a></li>
@@ -56,6 +60,9 @@
 							<h2>ABOUT ME.</h2>
 							<p class="light-gray">JingTing | Front-End Developer</p>
 							<p>
+								<!-- I have developing web applications experience for over two years.
+								When I was working on project, I learn how to communicate across departmants and group, 
+								and I keep challenge myself to become more professional on my field. -->
 								我擁有2年的網站切版開發經驗，參與過各式專案。在執行專案中，
 								學習團隊和跨部門溝通技巧能力，並持續探索在這領域上的新事物。
 								我想以此經驗整合公司資源，加入更多不同的專案。
@@ -84,29 +91,29 @@
 						<div class="col-sm-4">
 							<p>Leave any messages.</p>
 							<p>E-mail. kelly20829tw@gmail.com</p>
-							<p>(平日 09:00 ~ 18:00)</p>
+							<p>(Weekday 09:00 ~ 18:00)</p>
 						</div>
 						<div class="col-sm-4">
 							<div class="form-group">
-								<label for="name" class="sr-only">姓名(必填)</label>
-								<input type="text" id="name" class="form-control" placeholder="姓名*">
+								<label for="name" class="sr-only">name(required)</label>
+								<input type="text" id="name" class="form-control" placeholder="name*">
 							</div>
 							<div class="form-group">
-								<label for="email" class="sr-only">E-mail(必填)</label>
-								<input type="email" id="email" class="form-control" placeholder="E-mail*">
+								<label for="email" class="sr-only">e-mail(required)</label>
+								<input type="email" id="email" class="form-control" placeholder="e-mail*">
 							</div>
 							<div class="form-group">
-								<label for="phone" class="sr-only">電話</label>
-								<input type="text" id="phone" class="form-control" placeholder="電話">
+								<label for="phone" class="sr-only">phone</label>
+								<input type="text" id="phone" class="form-control" placeholder="phone">
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="form-group">
-								<label for="content" class="sr-only">留言</label>
-								<textarea id="content" class="form-control" placeholder="留言..."></textarea>
+								<label for="content" class="sr-only">messages</label>
+								<textarea id="content" class="form-control" placeholder="leave any messages..."></textarea>
 							</div>
 							<div class="form-group text-right">
-								<button class="btn btn-submit">送出</button>
+								<button class="btn btn-submit">send</button>
 							</div>
 						</div>
 					</div>
@@ -122,7 +129,7 @@
 					<div class="col-sm-2">
 						<div class="logo">JT.</div>
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-5 hidden-xs">
 						<ul class="list-unstyled menu">
 							<li class="menu-item"><a href="#about">ABOUT ME</a></li>
 							<li class="menu-item"><a href="#experience">EXPERIENCE</a></li>
@@ -136,7 +143,7 @@
 							<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
 							<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i> CakeResume</a></li>
 						</ul>
-						<p class="light-gray copyright">&copy;Copyright @ 2020 JingTing All rights reserved</p>
+						<p class="light-gray copyright">&copy;Copyright 2020 JingTing All rights reserved</p>
 					</div>
 				</div>
 			</div>
@@ -145,5 +152,13 @@
 
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		(function(){
+			$("#toogleNav").click(function(){
+				$("#toogleNav").toggleClass("active");
+				$("#sidebar").toggleClass("active")
+			});
+		})();
+	</script>
 </body>
 </html>
