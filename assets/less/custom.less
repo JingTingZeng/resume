@@ -57,10 +57,10 @@
     }
         .banner-title{
             text-align: right;
-            font-size: 1.5em;
+            font-size: 2em;
         }
         .banner-title-line{
-            width: 10em;
+            width: 60%;
             height: 3px;
             margin: 5px 0 15px 0;
             margin-right: 15px;
@@ -69,6 +69,11 @@
             margin-right: 15px;
             font-size: 1rem;
         }
+}
+@media screen and(max-width: 320px){
+    .banner-title{
+        font-size: 1.5em;
+    }
 }
 /*------------------------------------*\
     $l-about
@@ -116,8 +121,9 @@
         height: 100px;
     }
     .btn-submit{
+        width: 50%;
         height: 40px;
-        padding: 6px 5em;
+        padding: 6px 0;
         border: 1px solid #b2b2b2;
         border-radius: 0;
         background-color: transparent;
