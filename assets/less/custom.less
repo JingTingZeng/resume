@@ -97,6 +97,89 @@
 /*------------------------------------*\
     $l-collection
 \*------------------------------------*/
+.collection-name{
+    min-height: 2.5em;
+    font-size: 1rem;
+}
+.collection-date{
+    font-size: 14px;
+}
+.collection-button-prev,
+.collection-button-next{
+    width: 45px;
+    height: 45px;
+    margin-top: -22.5px;
+    border-radius: 50%;
+    background-color: rgba( 0, 0, 0, 0.4);
+    box-shadow: 3px 3px 5px rgba( 0, 0, 0, 0.2);
+    transition: all 0.5s;
+    &::after{
+        content:'';
+    }
+
+    .swiper-button-black{
+        width: 35px;
+        height: 35px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #ffffff;
+        &::after{
+            font-family: swiper-icons;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+        }
+    }
+
+    &:hover,&:active,&:focus{
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+    }
+}
+.collection-button-prev{
+    .swiper-button-black{
+        &::after{
+            content: 'prev';
+        }
+    }
+    &:hover,&:active,&:focus{
+        left: 7.5px;
+    }
+}
+.collection-button-next{
+    .swiper-button-black{
+        &::after{
+            content: 'next';
+        }
+    }
+    &:hover,&:active,&:focus{
+        right: 7.5px;
+    }
+}
+@media screen and(max-width: 767px){
+    .collection-button-prev,
+    .collection-button-next{
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        
+        .swiper-button-black{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        &:hover,&:active,&:focus{
+            width: 45px;
+            height: 45px;
+            margin-top: -22.5px;
+        }
+    }
+    
+}
+
 /*------------------------------------*\
     $l-contact
 \*------------------------------------*/

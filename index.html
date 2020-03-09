@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 	<link rel="stylesheet" href="assets/css/custom.css">
 
@@ -72,12 +73,37 @@
 				</div>
 			</section>
 			
-			<section id="collection" class="section-block bg-gray l-colletion">
+			<section id="collection" class="section-block bg-gray l-collection">
 				<div class="container">
 					<h2>COLLECTION.</h2>
+					<div id="project-slide" class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#"><img src="assets/images/collection1.png" class="img-responsive" alt=""></a>
+								<h3 class="collection-name">匆衝沖-高雄公廁查詢平台</h3>
+								<div class="light-gray collection-date">June 20, 2016</div>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="assets/images/collection1.png" class="img-responsive" alt=""></a>
+								<h3 class="collection-name">匆衝沖-高雄公廁查詢平台</h3>
+								<div class="light-gray collection-date">June 20, 2016</div>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="assets/images/collection1.png" class="img-responsive" alt=""></a>
+								<h3 class="collection-name">匆衝沖-高雄公廁查詢平台</h3>
+								<div class="light-gray collection-date">June 20, 2016</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev collection-button-prev">
+							<span class="swiper-button-black"></span>
+						</div>
+						<div class="swiper-button-next collection-button-next">
+							<span class="swiper-button-black"></span>
+						</div>
+					</div>
 				</div>
 			</section>
-			<section id="skilld" class="section-block l-skills">
+			<section id="skills" class="section-block l-skills">
 				<div class="container">
 					<h2>SKILLS.</h2>
 				</div>
@@ -150,12 +176,34 @@
 
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 	<script>
 		(function(){
 			$("#toogleNav").click(function(){
 				$("#toogleNav").toggleClass("active");
 				$("#sidebar").toggleClass("active")
 			});
+
+			var mySwiper = new Swiper ('#project-slide', {
+				loop: true,
+				navigation: {
+					nextEl: '.collection-button-next',
+					prevEl: '.collection-button-prev',
+				},
+				spaceBetween: 0,
+				slidesPerView: 1,
+				breakpointsInverse: true,
+				breakpoints: {
+					1200: {
+						slidesPerView: 4,
+						spaceBetween: 20
+					},
+					768: {
+						slidesPerView: 3,
+						spaceBetween: 10
+					}
+				}
+			})
 		})();
 	</script>
 </body>
