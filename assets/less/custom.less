@@ -237,6 +237,76 @@
     }
     
 }
+/*------------------------------------*\
+    $l-skills
+\*------------------------------------*/
+.skills-item{
+    .l-flex;
+    align-items: center;
+    margin-bottom: 40px;
+    span{
+        display: inline-block;
+    }
+}
+.skills-icon {
+    display: block;
+    margin-right: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgba( 0, 0, 0, 0.4);
+    background-image: url("@{imgUrl}skills-icon.png");    
+    background-repeat: no-repeat;
+
+    &.code-icon {
+        .stitches-sprite(0, 0, 100px, 100px);
+    }
+
+    &.framework-icon {
+        .stitches-sprite(-100px, 0, 100px, 100px);
+    }
+
+    &.hammer-icon {
+        .stitches-sprite(-200px, 0, 100px, 100px);
+    }
+
+    &.setting-icon {
+        .stitches-sprite(-300px, 0, 100px, 100px);
+    }
+
+    &.paint-icon {
+        .stitches-sprite(-400px, 0, 100px, 100px);
+    }
+}
+@media screen and(max-width: 767px){
+    .skills-item{
+        margin-bottom: 20px;
+    }
+    .skills-icon {
+        margin-right: 20px;
+        background-size: 350px 70px;
+
+        &.code-icon {
+            .stitches-sprite(0, 0, 70px, 70px);
+        }
+    
+        &.framework-icon {
+            .stitches-sprite(-70px, 0, 70px, 70px);
+        }
+    
+        &.hammer-icon {
+            .stitches-sprite(-140px, 0, 70px, 70px);
+        }
+    
+        &.setting-icon {
+            .stitches-sprite(-210px, 0, 70px, 70px);
+        }
+    
+        &.paint-icon {
+            .stitches-sprite(-280px, 0, 70px, 70px);
+        }
+    }
+}
+
 
 /*------------------------------------*\
     $l-contact
