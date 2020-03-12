@@ -1,280 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>My website</title>
-	<meta name="description" content="My website">
-	<link rel="Shortcut Icon" href="img/icon.ico" type="image/x-icon" />
-	<meta property="og:title" content="My website"></meta>
-	<meta property="og:url" content="https://jingtingzeng.github.io/resume/"></meta>
-	<meta property="og:image" content="https://raw.githubusercontent.com/jingtingzeng/resume/gh-pages/img/logo.png"></meta>
-	<meta property="og:description" content="曾靖婷 X 網站設計師"></meta>
-	<meta property="og:site_name" content="JingTing web designer"></meta>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JingTing | Front-End Developer</title>
+	<meta name="description" content="I have experience of developing web application for over two years.When I was working on project, I learn how to cooperate and communicate across departmants, and I keep challenge myself to become more professional on the field.">
+	<meta property="og:image" content="https://jingtingzeng.github.io/resume/assets/images/fb-share.png">
+    <meta property="og:url" content="https://jingtingzeng.github.io/resume/">
+    <meta property="og:title" content="JingTing | Front-End Developer"> 
+    <meta property="og:description" content="I have experience of developing web application for over two years.When I was working on project, I learn how to cooperate and communicate across departmants, and I keep challenge myself to become more professional on the field.">
+	<link rel="icon" href="/assets/images/shortcut-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/assets/images/shortcut-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/images/shortcut-48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="/assets/images/shortcut-62.png" sizes="62x62" type="image/png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/custom.css">
 
 </head>
+<body>
+	<header class="l-header">
+		<div id="toogleNav" class="hamburger visible-sm-block visible-xs-block">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="logo"><a id="top" href="#">JT.</a></div>
+		<nav id="sidebar" class="nav">
+			<ul class="list-unstyled menu">
+				<li class="menu-item"><a href="#about">ABOUT ME</a></li>
+				<!-- <li class="menu-item"><a href="#experience">EXPERIENCE</a></li> -->
+				<li class="menu-item"><a href="#collection">COLLECTION</a></li>
+				<li class="menu-item"><a href="#skills">SKILLS</a></li>
+				<li class="menu-item"><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+		<ul class="list-unstyled community">
+			<li><a href="https://github.com/JingTingZeng" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.cakeresume.com/s--nXmRp3TLPrw3XPSIXgf_Fg--/kelly20829tw" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></li>
+		</ul>
+	</header>
 
-	<style>
-		body{
-			padding-top: 40px;
-			font-family: 微軟正黑體;
-		}
-		.jumbotron{
-			padding: 70px;
-			background: #F08080;
-		}
-		.img-responsive{
-			max-width: 50%;
-		}
-		h3{
-			color: #F08080;
-		}
-		h2{
-			font-weight: bold;
-		}
-		.container-faulid{
-			margin-top: 40px;
-			padding-bottom: 20px;
-		}
-	</style>
-<body data-spy="scroll" data-target="#my-navbar">
-	<!-- Navbar -->
-	<nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
+	<main>
+		<div class="l-banner">
+			<div class="banner-text">
+				<h1 class="banner-title">Front-End Developer</h1>
+				<div class="banner-title-line"></div>
+				<div class="banner-desc">To make people's lives simple.</div>
 			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapse">
+		</div>
 
+		<div class="l-main">
+			<section id="about" class="section-block l-about">
+				<div class="container">
+					<div class="row about">
+						<div class="col-sm-6">
+							<h2>ABOUT ME.</h2>
+							<p class="light-gray">JingTing | Front-End Developer</p>
+							<p>
+								I have experience of developing web application for over two years.
+								When I was working on project, I learn how to cooperate and communicate across departmants, 
+								and I keep challenge myself to become more professional on the field.
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<img src="/assets/images/about.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
 			
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#Introduction">About me</a></li>
-					<li><a href="#Experience">Experience</a></li>
-					<li><a href="#Collection">Collection</a></li>
-					<li><a href="#Ability">Ability</a></li>
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
-			</div>
+			<section id="collection" class="section-block bg-gray l-collection">
+				<div class="container">
+					<h2>COLLECTION.</h2>
+					<div id="project-slide" class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="collection-img">
+									<img src="assets/images/publicToilet.png" class="img-responsive" alt="">
+									<div class="img-hover">
+										<a href="http://jingtingzeng.github.io/publicToilet/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+										<a href="https://github.com/JingTingZeng/publicToilet/" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="collection-info">
+									<h3 class="collection-name">匆衝沖 - 高雄公廁查詢平台</h3>
+								</div>
+								<div class="light-gray collection-date">Jun 15, 2016</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="collection-img">
+									<img src="assets/images/pomodoro.jpg" class="img-responsive" alt="">
+									<div class="img-hover">
+										<!-- <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a> -->
+										<a href="https://github.com/JingTingZeng/pomodoro" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="collection-info">
+									<h3 class="collection-name">Pomodoro - 番茄鐘</h3>
+									<p>UI from <a href="https://challenge.thef2e.com/user/1930?schedule=2575" target="_blank">The F2E Letitia73</a></p>
+								</div>
+								<div class="light-gray collection-date">Jul 14, 2019</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="collection-img">
+									<img src="assets/images/sellApp.jpg" class="img-responsive" alt="">
+									<div class="img-hover">
+										<!-- <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a> -->
+										<a href="https://github.com/JingTingZeng/sellApp" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="collection-info">
+									<h3 class="collection-name">SellApp - 美食外賣平台</h3>
+									<p>Course practice from <a href="https://www.youtube.com/watch?v=3fwlRyXOQhc&list=PLjGV94tuTnDPbPFS8ZXELb6kvwKtyEN5Z&index=2" target="_blank">"高仿餓了麼"</a></p>
+								</div>
+								<div class="light-gray collection-date">Jan 15, 2020</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="collection-img">
+									<img src="assets/images/bonjour.png" class="img-responsive" alt="">
+									<div class="img-hover">
+										<!-- <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a> -->
+										<a href="https://github.com/JingTingZeng/Bonjour" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="collection-info">
+									<h3 class="collection-name">Bonjour - 簡易多人聊天室</h3>
+								</div>
+								<div class="light-gray collection-date">Jan 08, 2017</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="collection-img">
+									<img src="assets/images/pecker.png" class="img-responsive" alt="">
+									<div class="img-hover">
+										<!-- <a href="#" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a> -->
+										<a href="https://github.com/jwc911037/PeckerWriter" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="collection-info">
+									<h3 class="collection-name">Pecker - 寫字繪圖機器人</h3>
+								</div>
+								<div class="light-gray collection-date">Dec 06, 2016</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev collection-button-prev">
+							<span class="swiper-button-black"></span>
+						</div>
+						<div class="swiper-button-next collection-button-next">
+							<span class="swiper-button-black"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="skills" class="section-block l-skills">
+				<div class="container">
+					<h2>SKILLS.</h2>
+					<div class="row">
+						<div class="col-sm-6 skills-item">
+							<div><i class="skills-icon code-icon"></i></div>
+							<div>
+								<span>Less,</span> 
+								<span>SCSS,</span> 
+								<span>HTML5,</span> 
+								<span>JavaScript, </span> 
+								<span>CSS</span>
+							</div>
+						</div>
+						<div class="col-sm-6 skills-item">
+							<div><i class="skills-icon framework-icon"></i></div>
+							<div>
+								<span>Bootstrap 3&4,</span>
+								<span>Vue</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 skills-item">
+							<div><i class="skills-icon hammer-icon"></i></div>
+							<div>
+								<span>jQuery,</span>
+								<span>REST APIs,</span>
+								<span>Google Service API</span>
+							</div>
+						</div>
+						<div class="col-sm-6 skills-item">
+							<div><i class="skills-icon setting-icon"></i></div>
+							<div>
+								<span>Git,</span>
+								<span>Webpack</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 skills-item">
+							<div><i class="skills-icon paint-icon"></i></div>
+							<div>
+								<span>Adobe Photoshop,</span>
+								<span>Adobe Illustrator,</span>
+								<span>Adobe XD</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="section-block l-contact">
+				<div class="container">
+					<h2 class="contact-title">CONTACT.</h2>
+					<div class="row">
+						<div class="col-sm-4">
+							<p>Leave any messages.</p>
+							<p>E-mail. kelly20829tw@gmail.com</p>
+							<p>(Weekday 09:00 ~ 18:00)</p>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="name" class="sr-only">name(required)</label>
+								<input type="text" id="name" class="form-control" placeholder="name*">
+							</div>
+							<div class="form-group">
+								<label for="email" class="sr-only">e-mail(required)</label>
+								<input type="email" id="email" class="form-control" placeholder="e-mail*">
+							</div>
+							<div class="form-group">
+								<label for="phone" class="sr-only">phone</label>
+								<input type="text" id="phone" class="form-control" placeholder="phone">
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="content" class="sr-only">messages</label>
+								<textarea id="content" class="form-control" placeholder="leave any messages..."></textarea>
+							</div>
+							<div class="form-group text-right">
+								<button id="send" class="btn btn-submit">send</button>
+							</div>
+					</div>
+					<div id="form-warning" class="row">
+						<div class="col-sm-8 col-sm-offset-4">
+							<div class="alert alert-danger" role="alert">
+								<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+								<span id="response"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
-	</nav>
-	<!-- jumbotron -->
-	<div class="jumbotron">
-		<div class="container text-center">
-			<h1><img src="img/H1.png"  class="img-responsive center-block"></h1>
-			<p>web designer</p>
-		</div>
-	</div>
-	<!-- About me -->
-	<div class="container">
-		<section>
-			<div class="page-header" id="Introduction">
-				<h2 class="text-center">ABOUT ME.</h2>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 col-lg-offset-1">
-					<img src="img/thk1.jpg" class="img-responsive img-rounded">
-				</div>
-				<div class="col-sm-6">
-					<h3>Introduction</h3>
-					<p>我是曾靖婷，2017年畢業於國立高雄大學 資訊管理學系，一位剛畢業的社會新鮮人。大學期間接觸到了網頁前端、行動體驗設計、遊戲設計等課程，讓我對介面排版設計非常有興趣，又能結合自己所學的電腦知識，再加上我很喜歡網購，所以能了解消費者逛網站時，很需要舒服好看且操作上直覺又方便的介面設計。</p>
-					<a href="" class="btn btn-danger navbar-btn navbar-right">
-					<span class="glyphicon glyphicon-cloud-download"></span>
-					Download Resume
-					</a>
-				</div>
-			</div>
-		</section>
-	</div>
-	<!-- Experience -->
-	<div class="container-faulid" style="background-color:#DCDCDC ">
-	<div class="container">
-		<section>
-			<div class="page-header" id="Experience">
-				<h2 class="text-center">EDUCATION-EXPERIENCE.</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<h2><span class="label label-primary glyphicon glyphicon-education"> Education</span></h2>
-					<br/>
-					<blockquote>
-						<h3><strong>國立高雄大學 資訊管理學系</strong></h3>
-						<p>大三、四接觸到前端課程、行動應用體驗設計、網站SEO等課程，資管除了讓我學到這方面知識，也讓我打下一定的程式基礎。且能結合我的美術興趣，為使用者帶來更舒服好看又操作易懂的網站。</p>
-						<footer>2013.9 ~ 2017.6</footer>
-						<h3><strong>台中市立東山高中</strong></h3>
-						<p>普通科</p>
-						<footer>2010.9-2013.6</footer>
-					</blockquote>
-				</div>
-				<div class="col-md-6">
-					<h2><span class="label label-primary glyphicon glyphicon-briefcase"> Experience</span></h2>
-					<br/>
-					<blockquote>
-						<h3><strong>哇寶酷 網拍工讀生</strong></h3>
-						<p>我是負責包裝出貨，偶爾會擔任直播小幫手。從中了解到網拍的經營模式，且現在越來越多網拍會透過直播的方式，競標商品。因為是直播的關係加上訂單量大，我需確實有效率跟上直播主還有每天的出貨速度，因此也培養了我的工作效率。</p>
-						<footer>2016.9-2017.6</footer>
-						<h3><strong>瑄展樂器行 行政工讀生</strong></h3>
-						<p>我是負責行政相關工作，除了負責打資料外，偶爾還要與家長或老師們應對溝通。雖然僅是工讀，但我有效率完成自己份內的工作，且準確完成老闆另外交代的項目。</p>
-						<footer>2015.9-2016.1</footer>
-					</blockquote>
-				</div>
-			</div>
-		</section>
-	</div>
-	</div>
-	<!-- Collection -->
-	<div class="container">
-		<section>
-			<div class="page-header" id="Collection">
-				<h2 class="text-center">COLLECTION.</h2>
-			</div>
-			<div class="carousel slide" id="screenshot-carousel" date-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#screenshot-carousel" data-slide-to="1"></li>
-					<li data-target="#screenshot-carousel" data-slide-to="2"></li>
-					<li data-target="#screenshot-carousel" data-slide-to="3"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-inner">
-						<div class="item active">
-							<a href="http://yuchun9508.github.io/web/final/index.html">
-								<img src="img/collection1.png">
-							</a>
-							<div class="carousel-caption">
-								<h3>匆衝沖</h3>
-								<p>結合高雄市OpenData，讓使用者透過網站可選擇高雄市區域、公廁類型與是否需要無障礙廁所來搜尋。<br/>搜尋結果會直接呈現在google map，幫助使用者更快找到廁所。</p>
-							</div>
-						</div>
-						<div class="item">
-							<a href="https://bonjourchat.herokuapp.com/">
-								<img src="img/collection3-2.png">
-							</a>
-							<div class="carousel-caption">
-								<h3>Bonjour</h3>
-								<p>簡易的多人聊天室，使用者登入後，選擇自己想要討論的版，<br/>進去版裡與多人聊天，旁邊會同時顯示在線人數。</p>
-							</div>
-						</div>
-						<div class="item">
-							<img src="img/collection3.png">
-							<div class="carousel-caption">
-								<h3>Pecker</h3>
-								<p>windows應用程式，控制寫字機器人， 使用者操作介面。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				</a>
-				<a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				</a>
-			</div>
-		</section>
-	</div>
-	<!-- Ability -->
-	<div class="container">
-		<section>
-			<div class="page-header" id="Ability">
-				<h2 class="text-center">ABILITY.</h2>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="panel panel-default text-center">
-						<div class="panel-body">
-							<img src="img/work90.png" class="img-responsive center-block">
-							<h3><strong>HTML / CSS</strong></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="panel panel-default text-center">
-						<div class="panel-body">
-							<img src="img/work60.png" class="img-responsive center-block">
-							<h3><strong>JAVASCRIPT</strong></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="panel panel-default text-center">
-						<div class="panel-body">
-							<img src="img/work45.png" class="img-responsive center-block">
-							<h3><strong>NODE.js</strong></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="panel panel-default text-center">
-						<div class="panel-body">
-							<img src="img/work50.png" class="img-responsive center-block">
-							<h3><strong>BOOTSTRAP3</strong></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="panel panel-default text-center">
-						<div class="panel-body">
-							<img src="img/work45.png" class="img-responsive center-block">
-							<h3><strong>PHOTOSHOP</strong></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="panel panel-default text-center">
-						<div class="panel-body">
-							<img src="img/work95.png" class="img-responsive center-block">
-							<h3><strong>WORD/PPT</strong></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-	<!-- Footer -->
-	<footer>
-	<div class="container-faulid" style="background-color:#F08080 ">
-		<div class="container">
-		<section>
-			<div class="page-header" id="Contact">
-				<h2 class="text-center">CONTACT ME.</h2>
-			</div>
+	</main>
 
-			<div class="row center-block">
-				<div class="col-lg-8">
-				<span class="glyphicon glyphicon-phone"></span>
-				<label class=" control-label"> Mobile  : 0972-338-805</label><br/>
-				<span class="glyphicon glyphicon-envelope"></span>
-				<label class=" control-label"> Email   : kelly20829tw@gmail.com</label><br/>
-				<span class="glyphicon glyphicon-home"></span>
-				<label class=" control-label"> Address : 台中市北區進化北路259號</label>
-				
-				
+	<footer class="l-footer">
+		<section class="section-block">
+			<div class="container">
+				<div class="row footer-content">
+					<div class="col-sm-2">
+						<div class="logo">JT.</div>
+					</div>
+					<div class="col-md-5 col-sm-4 hidden-xs">
+						<ul class="list-unstyled menu">
+							<li class="menu-item"><a href="#about">ABOUT ME</a></li>
+							<!-- <li class="menu-item"><a href="#experience">EXPERIENCE</a></li> -->
+							<li class="menu-item"><a href="#collection">COLLECTION</a></li>
+							<li class="menu-item"><a href="#skills">SKILLS</a></li>
+							<li class="menu-item"><a href="#contact">CONTACT</a></li>
+						</ul>
+					</div>
+					<div class="col-md-5 col-sm-6 footer-link">
+						<ul class="list-unstyled community">
+							<li><a href="https://github.com/JingTingZeng" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+							<li><a href="https://www.cakeresume.com/s--nXmRp3TLPrw3XPSIXgf_Fg--/kelly20829tw" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> CakeResume</a></li>
+						</ul>
+						<p class="light-gray copyright">&copy;Copyright 2020 JingTing All rights reserved</p>
+					</div>
 				</div>
-				<div class="col-lg-4">
-					<h4>Link</h4>
-					<ul class="list-inline">
-						<li><a href=""><img src="img/icon1.png" class="img-responsive"></a></li>
-						<li><a href=""><img src="img/icon2.png" class="img-responsive"></a></li>
-						<li><a href=""><img src="img/icon3.png" class="img-responsive"></a></li>
-					</ul>
-				</div>
-
 			</div>
-			<p class="text-center">&copy; Copyright @ 2017 JingTing All rights reserved</p>
 		</section>
-		</div>
-	</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<div id="successModal" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Thanks you!</h4>
+				</div>
+				<div class="modal-body text-center">
+					<i class="fa fa-check-circle" aria-hidden="true"></i>
+					<p>Thank for your message and I wil get back to you shortly!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+	<script src="assets/js/custom.js"></script>
 </body>
 </html>
