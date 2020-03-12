@@ -97,11 +97,69 @@
 /*------------------------------------*\
     $l-collection
 \*------------------------------------*/
+.swiper-wrapper{
+    .l-flex;
+}
+.swiper-slide{
+    .l-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    height: auto;
+}
+.collection-img{
+    cursor: pointer;
+    position: relative;
+
+    &:hover,&:active,&:focus{
+        .img-hover{
+            opacity: 1;
+        }
+    }
+}
+.img-hover{
+    .l-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.8);
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.3s;
+
+    a{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 35px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.3s;
+
+        &:hover,&:active,&:focus{
+            background-color: #ffffff;
+            color: #000000;
+        }
+        +a{
+            margin-left: 5px;
+        }
+    }
+}
+.collection-info{
+    font-size: 0.8em;
+}
 .collection-name{
-    min-height: 2.5em;
     font-size: 1rem;
 }
 .collection-date{
+    margin-top: auto;
     font-size: 14px;
 }
 .collection-button-prev,
